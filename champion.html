@@ -3,6 +3,7 @@
 <head>
     <title>Ultimate Guide to League</title>
     <style>
+       
         body{
             background: rgb(5, 5, 88);
             color: rgb(180, 158, 31);
@@ -18,9 +19,9 @@
         }
         p{
             color: rgb(180, 158, 31);
-            margin-right: 600px;
-            margin-left: 600px;
-            margin-bottom: 150px;
+            text-align: center;
+            margin-bottom: 100px;
+           
         }
         header{
             background: black;
@@ -36,13 +37,36 @@
         .Logo{
             margin-left: 610px;
         }
-        .Garen{
-            margin-left: 200px;
-        }
-        .Darius{
-            margin-left: 50px;
-            margin-top: -590px;
-        }
+        #championList {
+      text-align: center;
+    }
+    .champion-item {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .champion-title {
+      font-weight: bold;
+      color: rgb(180, 158, 31);
+      text-align: center;
+      ;
+    }
+    .champion-difficulty {
+        color: rgb(180, 158, 31);
+      font-style: italic;
+      text-align: center;
+      ;
+    }
+    .champion-image {
+      max-width: 100px;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    
+ 
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -60,28 +84,17 @@
     <h1><strong>Champions</strong></h1> 
     <img class="Logo" height="500" width="600" src="https://1000logos.net/wp-content/uploads/2020/09/League-of-Legends-Logo-2008.png" />
    
-    <p>Champions</p>
 
+    <div id="championList">
+        
+    </div>
     
-    <ul>
-
-    </ul>
-
-
-    <script>
-            fetch('https://ddragon.leagueoflegends.com/cdn/13.22.1/data/en_US/champion.json')
-            .then(res => {
-                return res.json();
-            })
-            .then(data => {
-                console.log(data);
-            })
-             //  .catch(error => console.log(error));
+    <script src= main.js>
             
-             
-                
-            
+
+
     </script>
+
 
 
 
