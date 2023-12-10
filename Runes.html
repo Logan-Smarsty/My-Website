@@ -2,6 +2,7 @@
 <html lang="en">
 <head>
     <title>Ultimate Guide to League</title>
+    <link rel="stylesheet" href="rune.css">
     <style>
         body{
             background: rgb(5, 5, 88);
@@ -9,8 +10,10 @@
             font-family: Arial, Helvetica, sans-serif;
             margin: 0 ;
             padding: 0;
-            height: 330vh;
+            height: 1500vh;
+            flex-direction: column;
         }
+
         h1{
             text-align: center;
             margin-top: 50px;
@@ -40,63 +43,88 @@
         .Logo{
             margin-left: 610px;
         }
-        #prectext{
-            margin-top: -50px;
-            margin-left: 860px;
-        }
-        #Precision{
-            margin-left:900px;
-        }
-        #precbox{
-            margin-left:-350px;
-            margin-top: -320px;
-        }
-        #Dom{
-            margin-left:900px;
-        }
-        #Domination{
-            margin-top: -50px;
-            margin-left: 860px;
-        }
-        #dombox{
-            margin-left:-350px;
-            margin-top:-320px;
-        }
-        #Sorcery{
-            margin-top:-50px;
-            margin-left:860px;
-        }
-        #Sorc{
-            margin-left:900px;
-        }
-        #SorcText{
-            margin-left: -350px;
-            margin-top: -320px;
-        }
-        #Resolvetitle{
-            margin-top: -50px;
-            margin-left:860px;
-        }
-        #Resolve{
-            margin-left: 900px;
-        }
-        #Restext{
-            margin-left: -350px;
-            margin-top: -320px;
-        }
-        #Inspotitle{
-            margin-top: -50px;
-            margin-left:860px;
-        }
-        #Inspo{
-            margin-left: 900px;
-        }
-        #Inspotext{
-            margin-left: -350px;
-            margin-top: -320px;
-        }
         #home{
             margin-left: 200px;
+        }
+        #Precision{
+            margin-left: 850px;
+        }
+       
+        *{
+            margin:0px;
+            padding:0px;
+            box-sizing: border-box;
+            font-family: sans-serif;
+            
+        }
+        .wrapper{
+            width:100%;
+            display: flex;
+            
+            align-items: center;
+            margin-top: 75px;
+            
+        }
+        .image{
+            width:250px;
+            height:400px;
+            position: relative;
+            margin-right: 230px;
+            
+        }
+       
+        .content{
+            width:100%;
+            height:100%;
+            position:absolute;
+            top:0;
+            Left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            opacity: 0;
+            transition: 0.6s;
+            margin-left: 130px;
+        }
+        .content:hover{
+            opacity: 1;
+        }
+        .content h1{
+            font-size:42px;
+            color:white;
+            margin-bottom:0px;
+          
+        }
+        .content p{
+         
+            width:400px;
+            height:250px;
+            font-size:20px;
+            font-weight: bold;
+            color:#fff;
+            text-align: center;
+           
+        }
+        .content > *{
+            transform:translateY(25px);
+            transition: transform 0.6s;
+        }
+        .content:hover > *{
+            transform:translateY(0px);
+        }
+        #Domination{
+            margin-left: 850px;
+        }
+        #Sorcery{
+            margin-left: 850px;
+        }
+        #Inspo{
+            margin-left: 850px;
+        }
+        #Resolve{
+            margin-left: 850px;
         }
     </style>
     <meta charset="UTF-8">
@@ -115,110 +143,662 @@
     <h1><strong>Runes</strong></h1> 
     <img class="Logo" height="500" width="600" src="https://1000logos.net/wp-content/uploads/2020/09/League-of-Legends-Logo-2008.png" />
    
-    <div id="prectext">
+    <div id="Precision">
         <h2>Precision</h2>
     </div>
+ 
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://server.blix.gg/imgproxy/Zbseh3L48iIipnJDGfYmymKXhIHT6Y-KepdzJjnkK1w/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzL2VmZDI4NDNiNDc4MjRlOWI4MjE0YjMxM2U5YjMzZmU4LnBuZw.webp">
+            
+            <div class="content">
+                <h1>Lethal Tempo</h1>
+                <p> After damaging an enemy champion, Lethal Tempo will begin charging, and after waiting a set amount of time, you'll gain a massive boost to your attack speed. In addition, it allows you to break the hard 2.50 attack speed cap. The duration of the buff is normally 3 seconds, but if you attack an enemy champion during that time, the buff will extend to 6 seconds.</p>
+            </div>
+        </div>  
 
-    <div id="Precision">
-        <img height="300" width="600" src="https://cdn.sanity.io/images/ccckgjf9/production/a973b1ab9251ba5432e6ad07d6b6885a82177bdf-670x343.png?max-h=1080&max-w=1920&fit=scale&auto=format"/>
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8021.webp">
+            
+            <div class="content">
+                <h1>Fleet Footwork</h1>
+                <p>Moving and basic attacking generates Energize stacks, up to 100. When fully Energized, your next basic attack heals you for 10-130 (+5% ability power) (+0.1 bonus attack damage) and grants 20% bonus movement speed for 1 second (depending on level).</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://server.blix.gg/imgproxy/flydKLOsmgvddIvMNzIXwiRqzjeFkaOvtkoirXfXokk/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzL2QyMjliMWQwM2U3ZDQxNWQ5OWE4MmI5YjMyZTE3N2U5LnBuZw.webp">
+            
+            <div class="content">
+                <h1>Conqueror</h1>
+                <p>Dealing damage to enemy champions grants stacks of Conqueror, lasting for 5 seconds, refreshing on subsequent damage against champions, and stacking up to 12 times. Gain [2 for Melee | 1 for Ranged] stacks from basic attacks and 2 stacks from abilities, spells, and item actives.</p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8005.webp">
+            
+            <div class="content">
+                <h1>Press The Attack</h1>
+                <p>Effects. Hitting an enemy champion with 3 consecutive basic attacks deals 40 - 180 (based on level) bonus Adaptive damage and makes them Vulnerable, increasing the damage they take by 8% from all sources for 6 seconds (The increased damage starts after the damage from the attack that applies it).</p>
+            </div>
+        </div>
+
     </div>
 
-    <div id="precbox">
-        <p>The Precision path provides runes that empower your attacks and increase your damage output, allowing for more aggressive plays. Many Precision runes also help you deal sustained damage and stay alive in extended fights.
 
-            Keystone Runes
+
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/9101.webp">
             
-            Press the Attack:“Hitting an enemy champion with 3 consecutive basic attacks deals 40 – 180 bonus adaptive damage (based on level), and makes them vulnerable, increasing the damage they take by 8 – 12% from all sources for 6s.
+            <div class="content">
+                <h1>Overheal</h1>
+                <p> Converts 20−100% of the healing in excess of your maximum health into a shield for an amount of up to 11% of your maximum health (depending on level). After 6 seconds, the shield decays by 1% of its maximum value every 0.25 seconds.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/9111.webp">
             
-            Lethal Tempo:“Gain 15% (Melee) or 5% (Ranged) attack speed for 6 seconds when you attack an enemy champion. This effect stacks up to 90% (Melee) or 30% (Ranged).”
+            <div class="content">
+                <h1>Triumph</h1>
+                <p>Scoring a takedown against an enemy champion heals you for 2.5% of your maximum health (+5% of your missing health) and grants you an additional 20 gold.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://www.mobafire.com/images/reforged-rune/presence-of-mind.png">
             
-            Fleet Footwork:“Attacking and moving builds energy stacks. At 100 stacks, your next attack is energized. Energized attacks heal you for 10 – 100 (+0.4 bonus AD, +0.3 AP) and grant 20% move speed for 1s.”
-            
-            Conqueror:“Basic attacks or spells that deal damage to an enemy champion grant 2 stacks of conqueror for 4 seconds, gaining 2 – 4 adaptive force per stack. When fully stacked, heal for 9% of the damage you deal to champions (6% for ranged champions).</p>
+            <div class="content">
+                <h1>Presence of Mind</h1>
+                <p>Champion takedowns, after a 1-second delay, restore 15% of your maximum mana or 15% of your maximum energy. Damaging an enemy champion increases your mana regeneration by 1.5−11 mana per second (depending on level), reduced to 80% effectiveness for ranged champions, for 4 seconds.</p>
+            </div>
+        </div>
+
     </div>
 
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://server.blix.gg/imgproxy/OFw8PfUev9QSQXsVosgFgIRdfYtCtt9rUn2wxn3Vxgo/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzLzUxYzJmMjRkZTY0YTQ1YTQ5NjE2YzM2NDM4M2ZmOWQ4LnBuZw.webp">
+            
+            <div class="content">
+                <h1>Legend: Alacrity</h1>
+                <p> Gain 3% attack speed plus an additional 1.5% for every Legend stack (max 10 stacks). Legend: Gain Legend stacks for every 100 points earned, up to 10: 100 points for champion takedowns. 100 points for epic monster takedowns. 25 points for large monster kills.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/9105.webp">
+            
+            <div class="content">
+                <h1>Legend: Tenacity</h1>
+                <p>Gain 5% tenacity plus an additional 1.5% for every Legend stack (max 10 stacks). Legend: Gain Legend stacks for every 100 points earned, up to 10: 100 points for champion takedowns. 100 points for epic monster takedowns.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/9103.webp">
+            
+            <div class="content">
+                <h1>Legend: Bloodline</h1>
+                <p>Gain 0.35% life steal per Legend stack, up to 5.25% at maximum stacks, at which you also gain 85 bonus health. Legend: Gain Legend stacks for every 100 points earned, up to 15: 100 points for champion takedowns.</p>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8014.webp">
+            
+            <div class="content">
+                <h1>Coup de Grace</h1>
+                <p> Effects. Deal 8% more damage to champions who have less than 40% health. This does not apply to true damage.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://www.mobafire.com/images/reforged-rune/cut-down.png">
+            <div class="content">
+                <h1>Cut Down</h1>
+                <p>Cut Down increases your damage output by 0% − 15% (based on target's additional maximum health). The formula to determine damage increase is (x - 0.1) × 1/9 + 0.05 where x is the additional maximum health that the target has in relation to the user of the rune.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://server.blix.gg/imgproxy/RtHb9mMU5Xus4qLvdz3aUGTvSA_oPKVL2iD_YXDzuRA/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzLzIzNzBiMDcyZGE5NDRjM2ViZWIzZTdmNzc4ZWVkODAyLnBuZw.webp">
+            
+            <div class="content">
+                <h1>Last Stand</h1>
+                <p>Effects. Deal 5% bonus damage while below 60% of your maximum health. This increases based on your missing health, up to 11% bonus damage while below 30% of your maximum health.</p>
+            </div>
+        </div>
+
+    </div>
+   
     <div id="Domination">
         <h2>Domination</h2>
     </div>
 
-    <div id="Dom">
-        <img height="300" width="600" src="https://cdn.sanity.io/images/ccckgjf9/production/b85eb2c490c70886f4ecd6589d4d9e43472ccb1b-670x344.png?max-h=1080&max-w=1920&fit=scale&auto=format"/>
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8112.webp">
+            
+            <div class="content">
+                <h1>Electrocute</h1>
+                <p>Applying 3 stacks to a target within a 3 second period causes them to be struck by lightning after a 0.25-second delay, dealing them 30 − 180 (based on level) (+ 40% bonus AD) (+ 25% AP) Adaptive damage.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8124.webp">
+            
+            <div class="content">
+                <h1>Predator</h1>
+                <p>Gain bonus movement speed for 10 seconds, ramping up to 25-50% (levels 7-18) over 1.5 seconds, while moving toward enemy champions (3000 range, includes enemy champions out of vision). Activating Predator will not break stealth.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8128.webp">
+            
+            <div class="content">
+                <h1>Dark Harvest</h1>
+                <p>Damaging a champion below 50% of their maximum health deals 20-80 (+5 per Soul) (+5% of ability power) (+0.1 per bonus attack damage) bonus Adaptive damage and reaps 1 Soul (depending on level). This cannot happen again for 45 seconds, resetting to 1.5 seconds on champion takedown.</p>
+            </div>
+        </div>
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/9923.webp">
+            
+            <div class="content">
+                <h1>Hail of Blades</h1>
+                <p>Basic attacking an enemy champion grants 110% bonus Attack Speed for your next 3 basic attacks. While active, Hails of Blade removes the attack speed cap. Hail of Blades lasts 3 seconds, and each basic attack refreshes the duration to 2 seconds.</p>
+            </div>
+        </div>
+
+    </div>
+   
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://i.postimg.cc/PCySMs8x/cheapshot-lol.png">
+            
+            <div class="content">
+                <h1>Cheap Shot</h1>
+                <p>Basic attacks and damaging abilities deal 10 - 45 (based on level) bonus true damage to slowed or immobilized enemy champions. Note that attacks or abilities that impair the target will not trigger that bonus damage themselves, unless the target is already slowed or immobilized.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://www.mobafire.com/images/reforged-rune/taste-of-blood.png">
+            
+            <div class="content">
+                <h1>Tast of Blood</h1>
+                <p>Heal for 16 - 40 (based on level) ( Adaptive ratio: +10% of Bonus Attack Damage or +5% of Ability Power) the next time you damage an enemy champion. Cooldown: 20 seconds.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8143.webp">
+            
+            <div class="content">
+                <h1>Sudden Impact</h1>
+                <p>
+                    After exiting stealth or using a dash, blink or teleport, dealing any damage to a champion grants you 9 Lethality and 7 Magic Penetration for 5 seconds. The triggering damage will also benefit from the penetration.</p>
+            </div>
+        </div>
+
+
     </div>
 
-    <div id="dombox">
-        <p>While Precision prioritizes sustained damage output, runes in the Domination path are all about upping your burst potential; they increase sudden damage output during short trades, and help you shred through squishy opponents. There are also Domination runes that improve your opportunity to locate and isolate enemy targets.
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8136.webp">
+            
+            <div class="content">
+                <h1>Zombie Ward</h1>
+                <p>Zombie Wards grant sight over 1100 units, are visible to the enemy team, have 1 health, last for 120 seconds and don't count towards your ward limit. Killing a Zombie Ward will grant 1 gold.</p>
+            </div>
+        </div>  
 
-            Keystone Runes
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8120.webp">
             
-            Electrocute:“Hitting a champion with 3 separate attacks or abilities within 3 seconds deals bonus adaptive damage.”
+            <div class="content">
+                <h1>Ghost Poro</h1>
+                <p>When your wards expire, they leave behind a Ghost Poro, which is untargetable and grants sight over a 450-unit area for 90 seconds. Wards killed by enemies or replacement do not spawn Ghost Poros.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8138.webp">
             
-            Hail of Blades:“Gain 110% attack speed when you attack an enemy champion for up to 3 attacks.”
-            
-            Predator:“Enhance your boots with the active effect ‘predator.’ Gain increased move speed, ramping up to 60% move speed over 1 second, while chasing enemy champions. After ramping up, damaging attacks or abilities to champions end this effect, dealing 40 – 120 (+0.2 bonus AD)(+0.1 AP) bonus adaptive damage.”
-            
-            Dark Harvest:“Damaging a champion below 50% health deals adaptive damage and harvests their soul, permanently increasing dark harvest’s damage by 5.”</p>
+            <div class="content">
+                <h1>Eyeball Collection</h1>
+                <p>Collect eyeballs for champion takedowns. Gain an Adaptive bonus of 0.6 Attack Damage or 1 Ability Power, per eyeball collected. Upon completing your collection at 20 eyeballs, additionally gain an Adaptive bonus of 6 Attack Damage, or 10 Ability Power for a total of 18 Attack Damage, or 30 Ability Power.</p>
+            </div>
+        </div>
+
     </div>
 
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8135.webp">
+            
+            <div class="content">
+                <h1>Treasure Hunter</h1>
+                <p>Gain 50 Gold (+ 20 Gold per Bounty Hunter stack) per unique takedown, up to 450 Gold at 5 unique takedowns. 1st unique takedown: 50 Gold , 2nd: 70 Gold , 3rd: 90 Gold , 4th: 110 Gold , 5th: 130 Gold .</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8134.webp">
+            
+            <div class="content">
+                <h1>Ignenious hunter </h1>
+                <p>Gain 20 (+6 per Bounty Hunter stack) item haste, up to 50 at 5 stacks. Earn a Bounty Hunter stack whenever scoring a takedown against an enemy champion, up to one per unique champion.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8105.webp">
+            
+            <div class="content">
+                <h1>Relentless Hunter</h1>
+                <p>Gain 5 out-of-combat movement speed (+8 per Bounty Hunter stack), up to 45 at 5 stacks. Earn a Bounty Hunter stack for takedowns, up to one per unique enemy champion.</p>
+            </div>
+        </div>
+
+        
+        <div class="image">
+            <img width="500" height="350" src="https://www.mobafire.com/images/reforged-rune/ultimate-hunter.png">
+            
+            <div class="content">
+                <h1>Ultimate Hunter</h1>
+                <p>Your ultimate gains 5% reduced cooldown, plus an additional 4% per Bounty Hunter stack (max 25%). Earn a Bounty Hunter stack the first time you get a takedown on each enemy champion.</p>
+            </div>
+        </div>
+    </div>
+    
+   
     <div id="Sorcery">
         <h2>Sorcery</h2>
     </div>
 
-    <div id="Sorc">
-        <img height="300" width="600" src="https://cdn.sanity.io/images/ccckgjf9/production/982786e6621188d1dc88cb250149754b3759c102-670x342.png?max-h=1080&max-w=1920&fit=scale&auto=format"/>
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8214.webp">
+            
+            <div class="content">
+                <h1>Summon Aery</h1>
+                <p>Abilities targeted at allied champions signal Aery to dash to them, shielding them for 30 - 100 (based on level) (+5%) (+10% Bonus). Aery lingers on the target for 2 seconds before flying back to you, and cannot be sent out again until she returns to you.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://img.rankedboost.com/wp-content/uploads/2017/05/8229.png">
+            <div class="content">
+                <h1>Arcane Comet</h1>
+                <p>Arcane Comet can be seen flying from the champion using it even if there is no vision of them, possibly giving away their position. The impact indicator has a radius of 175 units, for reference. The comet will be disabled on death, but its cooldown will still be able to get reduced by ability hits.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8230.webp">
+            
+            <div class="content">
+                <h1>Phase Rush</h1>
+                <p>Hitting an enemy champion with 3 attacks or separate abilities within 4 seconds grants ranged champions 15-40% movement speed, which is increased to 25-50% for melee champions (depending on level) and 75% slow resistance for the duration.</p>
+            </div>
+        </div>
+
     </div>
 
-    <div id="SorcText">
-        <p>Sorcery is the most magical rune path out there. No, seriously. It’s centered around empowering and enhancing AP abilities (aka turning you from Gandalf the Gray to Gandalf the White). Several runes also increase your opportunity to dish out AP damage, whether by giving you more mana or reducing your abilities’ cooldowns.
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8224.webp">
+            
+            <div class="content">
+                <h1>Nullifying Orb</h1>
+                <p>When you take magic damage that would reduce your health below 30%, gain a shield that absorbs 35 - 110 (based on level) (+9%) (+14% Bonus) for 4 seconds. 60 seconds cooldown.</p>
+            </div>
+        </div>  
 
-            Keystone Runes
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8226.webp">
             
-            Summon Aery:“Damaging enemy champions with basic attacks or abilities sends Aery to them, dealing 10 – 40 based on level (+0.1AP) (+0.15 bonus AD). Empowering or protecting allies with abilities sends Aery to them, shielding them for 35 – 80 based on level (+0.25 AP)(+0.4 bonus AD).”
+            <div class="content">
+                <h1>Manaflow Band</h1>
+                <p>Hitting enemy champions with a spell grants 25 maximum Mana, up to 250 Mana. Upon earning 250 Mana, Manaflow Band restores 1% of your missing Mana every 5 seconds. 15 seconds cooldown.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8275.webp">
             
-            Arcane Comet:“Damaging a champion with an ability hurls a comet at their location, or, if arcane comet is on cooldown, reduces its remaining cooldown.”
-            
-            Phase Rush:“Hitting an enemy champion with 3 attacks or separate abilities within 4 seconds grants 15 – 40% move speed based on level and 75% slow resistance.”</p>
+            <div class="content">
+                <h1>Nimbus Cloak</h1>
+                <p>Casting a summoner spell grants the ability to pass through units and provides a bonus of 5 - 35% movement speed (based on summoner spell cooldown) for 2 seconds. Cooldown: 60 seconds, reduced by Cooldown Reduction.</p>
+            </div>
+        </div>
+
     </div>
 
-    <div id="Resolvetitle">
-        <h2>Resolve</h2>
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8210.webp">
+            
+            <div class="content">
+                <h1>Trandscendence</h1>
+                <p>Gain 10% cooldown reduction at level 10. Additionally, you gain either 2 Ability Power or 1. 2 bonus Attack Damage (Adaptive) for every 1% cooldown reduction in excess of the cap.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8234.webp">
+            
+            <div class="content">
+                <h1>Celerity</h1>
+                <p>Grants multiplicative bonus movement speed equal to 7% of the sum of your other multiplicative bonuses. On every new stat update, the multiplicative bonus of Celerity will avoid multiplying itself from the previous cycle.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8233.webp">
+            
+            <div class="content">
+                <h1>Absolute Focus</h1>
+                <p>Gain 1. 8 − 18 (based on level) bonus Attack Damage or 3 − 30 (based on level) Ability Power (Adaptive) while above 70% of your maximum health. Adaptive: Grants bonuses based on which stat you already have the most bonuses for.</p>
+            </div>
+        </div>
+
     </div>
 
-    <div id="Resolve">
-        <img height="300" width="600" src="https://cdn.sanity.io/images/ccckgjf9/production/000960361788dd844104b3ab35cd56366006045d-669x336.png?max-h=1080&max-w=1920&fit=scale&auto=format"/>
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://www.mobafire.com/images/reforged-rune/scorch.png">
+            
+            <div class="content">
+                <h1>Scorch</h1>
+                <p>Your next damaging ability hit sets champions on fire, dealing 20 - 40 bonus magic damage based on level after 1 second.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8232.webp">
+            
+            <div class="content">
+                <h1>Waterwalking</h1>
+                <p>Gain 25 bonus movement speed and an Adaptive bonus of 3 - 18 (based on level) bonus Attack Damage or 5 - 30 (based on level) Ability Power when in the river.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8236.webp">
+            
+            <div class="content">
+                <h1>Gathering Storm</h1>
+                <p>Every 10 minutes, gain (1 per 10 Minutes) stacks of Gathering Storm. Each stack grants 8 ability power or 4. 8 attack damage (Adaptive). This stacks with no upper limit, for a total of 8 − ∞ (based on Minutes) AP or 5 − ∞ (based on Minutes) AD at 10 − ∞ (based on Stacks) minutes.</p>
+            </div>
+        </div>
+
     </div>
 
-    <div id="Restext">
-        <p>Resolve runes give your champion more sustain and survivability, whether through shielding, resistances or additional health. Some Resolve runes also give your champion extra crowd control, granting you more ways to safely disengage (or catch out your enemies).
-
-            Keystone Runes
-            
-            Grasp of the Undying:“Every 4 seconds in combat, your next basic attack on a champion will: deal bonus magic damage equal to 4% of your max health, heals you for 2% of your max health, permanently increase your health by 5.”
-            
-            Aftershock:“After immobilizing an enemy champion, increase your armor and magic resist by 35 + 80% of your bonus resists for 2.5 seconds. Then explode, dealing magic damage to nearby enemies.”
-            
-            Guardian:“Guard allies within 350 units of you, and allies you target with spells for 2.5 seconds. While guarding, if you or the ally take more than a small amount of damage over the duration of the guard, both of you gain a shield for 1.5 seconds.”</p>
-    </div>
-
-    <div id="Inspotitle">
+    
+    <div id="Inspo">
         <h2>Inspiration</h2>
     </div>
 
-    <div id="Inspo">
-        <img height="300" width="600" src="https://i.ytimg.com/vi/ETjCKuWND8k/maxresdefault.jpg"/>
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8351.webp">
+            
+            <div class="content">
+                <h1>Glacial Augment</h1>
+                <p>
+                    Immobilizing an enemy champion will cause 3 glacial rays to emanate from them towards you and other nearby enemy champions, creating icy zones that last for 3 (+100% of the immobilizing effect's duration) seconds.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://cdn.vox-cdn.com/thumbor/1jrj3a0jlSaOEXOktei7ggJXbXk=/1400x1400/filters:format(png)/cdn.vox-cdn.com/uploads/chorus_asset/file/10118545/Unsealed_Spellbook_rune.png">
+            
+            <div class="content">
+                <h1>Unsealed Spellbood</h1>
+                <p>While being out-of-combat for 5 seconds, swap one of your equipped summoner spells to a new, single use summoner spell. You cannot select a summoner spell you have already equipped. Your first swap becomes available at the 6 minute mark, with an initial 240 second cooldown.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8369.webp">
+            
+            <div class="content">
+                <h1>First Strike</h1>
+                <p>
+                    Dealing damage to an enemy champion within the first 0.25 seconds of champion combat, grants 5 gold and First Strike for 3 seconds, causing all of your damage dealt against champions to deal 7% bonus damage.</p>
+            </div>
+        </div>
+
     </div>
 
-    <div id="Inspotext">
-        <p>Out of all the rune lines, Inspiration is the most unique. It gives players new ways to play around their enemy, and many runes provide additional items (or “tools”) that give you an advantage in laning phase.
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://lolstatic-a.akamaihd.net/frontpage/apps/prod/preseason-2018/en_US/a6708b7ae3dbc0b25463f9c8e259a513d2c4c7e6/assets/img/runeBuilder/runes/108x108/8306.png">
+            
+            <div class="content">
+                <h1>Hextech Flashtrpation</h1>
+                <p>While Flash is on cooldown, it is replaced by Hexflash. Hexflash: Channel for up to 2 seconds to blink to a new location. Uses Quick Casting by default, which requires the First Cast to be held and the Second Cast occurs on release.</p>
+            </div>
+        </div>  
 
-            Keystone Runes
+        <div class="image">
+            <img  width="500" height="350" src="https://www.mobafire.com/images/reforged-rune/magical-footwear.png">
             
-            Glacial Augment:“Immobilizing an enemy champion will cause 3 glacial rays to emanate from them towards you and other nearby enemy champions, creating frozen zones for 3 (+ 100% of the immobilizing effect’s duration) seconds that slow enemies for 35% (+ 5% per 10% heal and shield power) (+2% per 100 bonus attack damage) and reduce their damage by 15% against your allies (not including yourself).”
+            <div class="content">
+                <h1>Magical Footwear</h1>
+                <p>You get free Slightly Magical Boots at 12 minutes, but you cannot buy boots before then. For each takedown you acquire the boots 45 seconds sooner. Slightly Magical Boots give you an additional +10 Movement Speed. This rune has no effect on Cassiopeia.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8313.webp">
             
-            Unsealed Spellbook:“Swap one of your equipped summoner spells to a new, single use summoner spell. Each unique summoner spell you swap to permanently decreases your swap cooldown by 25 seconds.”
-            
-            First Strike:“Attacks or abilities against an enemy champion within 0.25 seconds of entering champion combat grants 5 gold and First Strike for 3 seconds, causing you to deal 10% extra damage against champions, and granting 100% (70% for ranged champions) of bonus damage dealt as gold.”</p>
+            <div class="content">
+                <h1>Perfect Timing</h1>
+                <p>Perfect Timing gives you a Stopwatch worth 250 gold and no bonus. Only benefit is it gives you stopwatch early that normally costs 650 gold, but it only reduces 250 gold from Zhonya, making it less gold efficient than Magical Footwear.</p>
+            </div>
+        </div>
+
     </div>
 
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8321.webp">
+            
+            <div class="content">
+                <h1>Future's Market</h1>
+                <p>You can enter debt to buy items, up to 150 gold (+5 gold per Minute). A 50 gold lending fee is added on to the amount of money you owe after leaving the store. Debt doesn't become available until 2 minutes into the game.</p>
+            </div>
+        </div>  
 
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8316.webp">
+            
+            <div class="content">
+                <h1>Minion Dematerializer</h1>
+                <p>Minion Dematerializer that kill and absorb lane minions instantly, granting its user gold and experience normally. Minion Dematerializers are on cooldown for the first 180 seconds of the game, have 550 range, and are placed on a 10 seconds cooldown each time the user consumes one of them.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8345.webp">
+            
+            <div class="content">
+                <h1>Biscuit Delivery</h1>
+                <p>Gain a Total Biscuit of Everlasting Will every 3 mins, until 12 min. Biscuits restore 15% of your missing health and mana. Consuming any Biscuit increases your mana cap by 40 mana permanently. Manaless: Champions without mana restore 20% missing health instead.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8347.webp">
+            
+            <div class="content">
+                <h1>Cosmic Insight</h1>
+                <p> Gain 15 summoner spell haste and 10 item haste</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8410.webp">
+            
+            <div class="content">
+                <h1>Apporach Velocity</h1>
+                <p>Gain 7.5% bonus movement speed when moving toward a movement-impaired enemy champion. Increased to 15% if you were the one who impaired their movement.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8352.webp">
+            
+            <div class="content">
+                <h1>Time Warp Tonic</h1>
+                <p>Consuming a potion or biscuit grants 30% of its health immediately, and mana if applicable. Health/mana per tick is then reduced by half for the effect's regular duration. If consumables are stacked, the instant restoration is applied after the duration of the initial consumable ends.</p>
+            </div>
+        </div>
+
+    </div>
+
+     
+    <div id="Resolve">
+        <h2>Resolve</h2>
+    </div>
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8437.webp">
+            
+            <div class="content">
+                <h1>Grasp of the Undying</h1>
+                <p>If you have dealt or received damage in the last 2 seconds, you will generate stacks of Grasp of the Undying every second. At 4 stacks, your next attack against an enemy champion will deal 4% of your maximum health bonus magic damage, restore 2% of your maximum health, and permanently grants 5 maximum health.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8439.webp">
+            
+            <div class="content">
+                <h1>Aftershock</h1>
+                <p>After immobilizing an enemy champion, increase your Armor and Magic Resists by 35 + 80% of your Bonus Resists for 2.5 seconds. Then explode, dealing 25 - 120 (based on level) [+8% bonus] magic damage to nearby enemies. 20 seconds Cooldown. Resistance bonus from Aftershock capped at: 80 -150 based on level.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8465.webp">
+            
+            <div class="content">
+                <h1>Guardian</h1>
+                <p>While within 350 units of an allied Champion icon champion, you raise your Guard. Allied champions you affect with unit-targeted abilities are also Guarded for 3 seconds, regardless of distance.
+                    If you or a Guarded ally would take 90 − 250 (based on level) damage within 2.5 seconds or lethal damage from an enemy champion, Monster icon monster or Turret icon turret, you both gain a Hybrid resistances icon shield for 45 − 120 (based on level) (+ 12.5% of Guardian's AP) (+ 8% of Guardian's bonus health) for 2 seconds.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://server.blix.gg/imgproxy/vms1btggCVhdBfYEPeGQyB024tli0H2kCzOgFKnr_x0/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzL2Q0ZTA3ZWExNzgyYzQwYTE4ZmU0ODlkMjQ4ZTZkMzRlLnBuZw.webp">
+            
+            <div class="content">
+                <h1>Demolish</h1>
+                <p>You generate stacks on enemy structures within 600 units, up to 6 after 3 seconds. Stacks fall off slowly if you move out of range. Your next attack versus a structure with 6 stacks deals 100 [+35% your Max] bonus physical damage.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8463.webp">
+            
+            <div class="content">
+                <h1>Font of Life</h1>
+                <p>Impairing the movement of an enemy champion marks them for 4 seconds. Allied champions who attack marked enemies heal for 5 (+0.9% of your max health) over 2 seconds.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8401.webp">
+            
+            <div class="content">
+                <h1>Shield Bash</h1>
+                <p>Effects. While shielded, gain 1 - 10 bonus Armor and Magic Resist based on Level. Whenever you gain a new shield, your next basic attack against a champion deals 5 - 30 [+1.5% bonus] (+8.5% New Shield Amount) bonus adaptive damage. You have up to 2s after the shield expires to use this effect.</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8429.webp">
+            
+            <div class="content">
+                <h1>Conditioning</h1>
+                <p>After 12 minutes gain 9 bonus Armor and 9 bonus Magic Resist and increases your total Armor and Magic Resists by 4%.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://leagueofitems.com/images/runes/256/8444.webp">
+            
+            <div class="content">
+                <h1>Second Wind</h1>
+                <p>grants health regeneration equal to 1. 5 (+ 2% of missing health). If attacked while already under the effect of Second Wind, the duration will refresh. 36 × 3 health regen per 5s.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8473.webp">
+            
+            <div class="content">
+                <h1>Bone Plating</h1>
+                <p>After taking damage from an enemy champion, for 1.5 seconds, the next 3 spells or attacks you receive from the same enemy champion deal 30 − 60 (based on level) less damage (including. true damage).</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div class="wrapper">
+        <div class="image">
+            <img width="500" height="350" src="https://server.blix.gg/imgproxy/rrJ27oKurW2iMdTeAcM3YZ2LrIzC_RwbeunGq1USzKU/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzL2I2MjhkZmIwYTI4ZjRkMDk4NTBjZTExNDU0NWI1NTRjLnBuZw.webp">
+            
+            <div class="content">
+                <h1>Overgrowth</h1>
+                <p>Absorb life essence from monsters or enemy minions that die near you (1400 range), permanently gaining 3 maximum Health for every 8. When you absorbed 120 monsters or enemy minions, gain an additional 3.5% maximum Health.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img  width="500" height="350" src="https://server.blix.gg/imgproxy/x2MIYJov56GntfolJbw6knuoUXGVrWFcBZOLLTWa_I0/rs:fit:260:260:0/g:no/aHR0cDovL21pbmlvOjkwMDAvaW1hZ2VzL2IyNmZlZjFjNmEwMzRhNDE4YWZhNzA2YTRhMGFiMTU4LnBuZw.webp">
+            
+            <div class="content">
+                <h1>Revitalize</h1>
+                <p>Grants 5% Heal and Shield Power. Outgoing healing and outgoing shielding is increased by 10% versus targets below 40% health. Incoming healing, incoming shielding, self healing and self shielding are increased by 10% while you are below 40% health.</p>
+            </div>
+        </div>  
+
+        <div class="image">
+            <img width="500" height="350" src="https://leagueofitems.com/images/runes/256/8242.webp">
+            
+            <div class="content">
+                <h1>Unflinching</h1>
+                <p>Gain 5% slow resist and tenacity. This increases based on your missing health, up to 25% slow resist and tenacity at 30% maximum health or below.</p>
+            </div>
+        </div>
+
+    </div>
 </body>
 </html> 

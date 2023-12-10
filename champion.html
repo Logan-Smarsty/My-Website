@@ -68,7 +68,19 @@
     #home{
       margin-left: 200px;
     }
- 
+    #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+
+    }
     </style>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -80,12 +92,15 @@
         <button><a href="Objectives.html">Objectives</a></button>
         <button><a href="waves.html">Waves</a></button>
         <button><a href="roles.html">Roles</a></button>
-        <button><a href="Runes.html">Runes & Items</a></button>
+        <button><a href="Runes.html">Runes</a></button>
     
     </header>
     <h1><strong>Champions</strong></h1> 
     <img class="Logo" height="500" width="600" src="https://1000logos.net/wp-content/uploads/2020/09/League-of-Legends-Logo-2008.png" />
    
+
+    <p>For this page each champion has its own difficulty, this difficulty scale goes from 0-10. 0 being the easiest champions to learn and master, and 10 being the hardest champions to master and learn mechanically.</p>
+
 
     <div id="championList">
         
@@ -96,6 +111,37 @@
 
 
     </script>
+
+<button id="scrollToTopBtn" onclick="scrollToTop()">Top Of Screen</button>
+
+<script>
+
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
+
+
+
+ 
+
 
 
 
