@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Ultimate Guide to League</title>
+    <style>
+       
+        body{
+            background: rgb(5, 5, 88);
+            color: rgb(180, 158, 31);
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0 ;
+            padding: 0;
+        }
+        h1{
+            text-align: center;
+            margin-top: 50px;
+            color: rgb(180, 158, 31);
+            
+        }
+        p{
+            color: rgb(180, 158, 31);
+            text-align: center;
+            margin-bottom: 100px;
+           
+        }
+        header{
+            background: black;
+            padding: 30px;
+        }
+        button{
+            background: black;
+            color: white;
+            width: 150px;
+            height: 100px;
+            margin: 60px
+        }
+        .Logo{
+            margin-left: 610px;
+        }
+        #championList {
+      text-align: center;
+    }
+    .champion-item {
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      padding: 10px;
+      text-align: center;
+    }
+    .champion-title {
+      font-weight: bold;
+      color: rgb(180, 158, 31);
+      text-align: center;
+      ;
+    }
+    .champion-difficulty {
+        color: rgb(180, 158, 31);
+      font-style: italic;
+      text-align: center;
+      ;
+    }
+    .champion-image {
+      max-width: 100px;
+      height: auto;
+      display: block;
+      margin-bottom: 10px;
+      text-align: center;
+    }
+    #home{
+      margin-left: 200px;
+    }
+    #scrollToTopBtn {
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background-color: black;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      padding: 10px 15px;
+      cursor: pointer;
+
+    }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <header>
+        <button id="home"><a href="index.html">Home</a></button>
+        <button><a href="Objectives.html">Objectives</a></button>
+        <button><a href="waves.html">Waves</a></button>
+        <button><a href="roles.html">Roles</a></button>
+        <button><a href="Runes.html">Runes</a></button>
+    
+    </header>
+    <h1><strong>Champions</strong></h1> 
+    <img class="Logo" height="500" width="600" src="https://1000logos.net/wp-content/uploads/2020/09/League-of-Legends-Logo-2008.png" />
+   
+
+    <p>For this page each champion has its own difficulty, this difficulty scale goes from 0-10. 0 being the easiest champions to learn and master, and 10 being the hardest champions to master and learn mechanically.</p>
+
+
+    <div id="championList">
+        
+    </div>
+    
+    <script src= main.js>
+            
+
+
+    </script>
+
+<button id="scrollToTopBtn" onclick="scrollToTop()">Top Of Screen</button>
+
+<script>
+
+  var mybutton = document.getElementById("scrollToTopBtn");
+
+  window.onscroll = function() {
+    scrollFunction();
+  };
+
+  function scrollFunction() {
+    if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+      mybutton.style.display = "block";
+    } else {
+      mybutton.style.display = "none";
+    }
+  }
+
+
+  function scrollToTop() {
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+  }
+</script>
+
+
+
+
+ 
+
+
+
+
+
+</body>
+</html> 
